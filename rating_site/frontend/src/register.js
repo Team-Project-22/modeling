@@ -126,7 +126,7 @@ export default function SignUp(){
               <Grid item xs={12}>
                 <FormControlLabel
                   control={<Checkbox value="allowExtraEmails" color="primary" />}
-                  label="I want to receive inspiration, marketing promotions and updates via email."
+                  label="이메일을 통해 뉴스레터를 받고싶나요?"
                 />
               </Grid>
             </Grid>
