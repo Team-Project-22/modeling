@@ -263,3 +263,10 @@ cython_debug/
 #.idea/
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,pycharm+all
+*.jpg
+
+*.json
+
+artic-api-data.tar.bz2
+
+rating_site/
