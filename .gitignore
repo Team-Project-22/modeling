@@ -268,3 +268,5 @@ cython_debug/
 *.json
 
 artic-api-data.tar.bz2
+
+rating_site/
