@@ -1,3 +1,5 @@
+import random
+
 from rest_framework import viewsets, status
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.response import Response
@@ -20,6 +22,11 @@ class ArtworkViewset(viewsets.ModelViewSet):
     queryset = Artwork.objects.all()
     serializer_class = ArtworkSerializer
     pagination_class = ArtworkPagination
+
+    def get_queryset(self):
+        objects = list(Artwork.objects.all())
+        random.shuffle(objects)
+        return objects
 
 class RatingViewSet(viewsets.ModelViewSet):
     serializer_class = RatingSerializer
